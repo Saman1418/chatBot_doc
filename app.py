@@ -22,9 +22,9 @@ import os
 # print(r.text)
 
 
-# os.environ["OPENAI_API_KEY"] = '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'
-# os.environ["OPENAI_API_KEY"] = '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'
-os.environ["OPENAI_API_KEY"] = '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'
+# os.environ["OPENAI_API_KEY"] = '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'
+# os.environ["OPENAI_API_KEY"] = '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'
+os.environ["OPENAI_API_KEY"] = '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'
 
 def construct_index(directory_path):
     max_input_size = 4096

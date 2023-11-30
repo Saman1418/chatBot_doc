@@ -3,8 +3,13 @@ from langchain.chat_models import ChatOpenAI
 import gradio as gr
 import sys
 import os
-
+# from dotenv import load_dotenv
 # import urllib2
+# load_dotenv()
+
+# import openai
+
+# openai.api_key = os.environ["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"]
 
 # proxy_support = urllib2.ProxyHandler({"http":"http://61.233.25.166:80"})
 # opener = urllib2.build_opener(proxy_support)
@@ -22,10 +27,8 @@ import os
 # print(r.text)
 
 
-# os.environ["OPENAI_API_KEY"] = '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'
-# os.environ["OPENAI_API_KEY"] = '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'
-# os.environ["OPENAI_API_KEY"] = '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'
-os.environ["OPENAI_API_KEY"] = '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'
+# os.environ["OPENAI_API_KEY"] = "OPENAI_API_KEY"
+os.environ["OPENAI_API_KEY"] = "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"
 
 def construct_index(directory_path):
     max_input_size = 4096
@@ -57,4 +60,4 @@ iface = gr.Interface(fn=chatbot,
 
 
 index = construct_index("docs")
-iface.launch(share=True)
+iface.launch()
